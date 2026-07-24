@@ -45,6 +45,16 @@ SELECT
 FROM customer_churnn;
 
 
+--CHURN BY CITY....
+SELECT
+    city,
+    churn,
+    COUNT(*) AS total_customers
+FROM customer_churn
+GROUP BY city, churn
+ORDER BY city;
+
+
 
 --CHURN BY CONTRACT_TYPE
 
